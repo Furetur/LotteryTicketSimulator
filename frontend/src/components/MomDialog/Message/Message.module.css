@@ -1,0 +1,14 @@
+.Message {
+  margin: 4px 0;
+  padding: 8px 12px;
+  border-radius: 15px;
+}
+
+.mine {
+  color: white;
+  background: cornflowerblue;
+}
+
+.their {
+  background: antiquewhite;
+}

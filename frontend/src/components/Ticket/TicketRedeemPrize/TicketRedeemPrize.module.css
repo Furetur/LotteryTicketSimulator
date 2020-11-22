@@ -1,0 +1,22 @@
+.TicketRedeemPrize {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
+}
+
+.cells {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 16px;
+}
+
+.prize {
+  margin-top: 16px;
+  font-size: 2rem;
+  font-weight: bolder;
+}
