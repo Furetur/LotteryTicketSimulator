@@ -13,7 +13,8 @@ import io.ktor.response.respond
 import io.ktor.request.receiveText
 import io.ktor.http.HttpStatusCode
 import io.ktor.features.ContentTransformationException
-import io.ktor.http.content.*
+import io.ktor.http.content.static
+import io.ktor.http.content.resources
 
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
@@ -30,8 +31,6 @@ fun Application.module() {
         static("/") {
             resources("static/")
         }
-
-        default("static/index.html")
 
         post("/buyTicket") {
             val ticket = try {
@@ -67,4 +66,3 @@ fun Application.module() {
         }
     }
 }
-
