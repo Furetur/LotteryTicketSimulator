@@ -10,3 +10,4 @@
 /frontend/coverage
 /frontend/build
 /frontend/yarn-error.log
+resources/static
